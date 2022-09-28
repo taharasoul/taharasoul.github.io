@@ -1,0 +1,29 @@
+body {
+  background: url("./blur-background-og.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+ul li:nth-child(odd) {
+  color: red;
+}
+
+ul li:nth-child(even) {
+  color: blue;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+  font-size: 22px;
+}

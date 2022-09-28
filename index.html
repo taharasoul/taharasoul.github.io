@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+    <script src="./todo-scripts.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Todo tasks</h1>
+    </header>
+    <main>
+        <form onsubmit="return validateMyForm(event);">
+            Enter task: <input type="text" id="todo-value" />
+            <button type="submit">Add task</button>
+          </form>
+          <ul id="todo-values"></ul>
+    </main>
+
+    <footer class="footer">All rights reserved by Taha</footer>
+  </body>
+</html>
