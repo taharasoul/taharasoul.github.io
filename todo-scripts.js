@@ -1,6 +1,6 @@
 const todos = [];
 
-function validateMyForm(event) {
+function addToDo(event) {
   event.preventDefault();
 
   const todoValue = document.getElementById("todo-value").value;

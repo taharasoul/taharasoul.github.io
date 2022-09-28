@@ -13,13 +13,13 @@
       <h1>Todo tasks</h1>
     </header>
     <main>
-        <form onsubmit="return validateMyForm(event);">
-            Enter task: <input type="text" id="todo-value" />
-            <button type="submit">Add task</button>
-          </form>
-          <ul id="todo-values"></ul>
+      <form onsubmit="return addToDo(event);">
+        <label>Enter task: </label>
+        <input type="text" id="todo-value" />
+        <button type="submit">Add task</button>
+      </form>
+      <ul id="todo-values"></ul>
     </main>
-
     <footer class="footer">All rights reserved by Taha</footer>
   </body>
 </html>
