@@ -1,18 +1,35 @@
 const todos = [];
 
-function addToDo(event) {
-  event.preventDefault();
+let addToDoButton = document.getElementById("addToDo");
+let toDoContainer = document.getElementById("toDoContainer");
+let toDoContainer2 = document.getElementById("toDoContainer-2");
+let reminder = document.getElementById("reminder");
+let inputField = document.getElementById("inputField");
 
-  const todoValue = document.getElementById("todo-value").value;
-  todos.push(todoValue);
+addToDoButton.addEventListener("click", function () {
+  var paragraph = document.createElement("p");
 
-  document.getElementById("todo-values").innerHTML = "";
+  paragraph.classList.add("paragraph-styling");
 
+  paragraph.innerText = inputField.value;
+
+  toDoContainer.appendChild(paragraph);
+
+  todos.push(inputField.value);
+
+  inputField.value = "";
+
+  paragraph.addEventListener("click", function () {
+    paragraph.style.textDecoration = "line-through";
+  });
+});
+
+reminder.addEventListener("click", function () {
+  toDoContainer2.innerHTML = "";
   for (let i = 0; i < todos.length; i++) {
-    const child = document.createElement("li");
-
-    child.innerHTML = todos[i];
-
-    document.getElementById("todo-values").appendChild(child);
+    const paragraph = document.createElement("p");
+    paragraph.innerHTML = "Don't forget to: " + todos[i];
+    paragraph.classList.add("paragraph-styling");
+    toDoContainer2.appendChild(paragraph);
   }
-}
+});

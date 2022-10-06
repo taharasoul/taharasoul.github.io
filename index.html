@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo list</title>
-    <script src="./todo-scripts.js"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Todo tasks</h1>
-    </header>
-    <main>
-      <form onsubmit="return addToDo(event);">
-        <label>Enter task: </label>
-        <input type="text" id="todo-value" />
-        <button type="submit">Add task</button>
-      </form>
-      <ul id="todo-values"></ul>
-    </main>
-    <footer class="footer">All rights reserved by Taha</footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>To Do List</title>
+</head>
+
+<body>
+  <h1>To Do List</h1>
+  <div class="container">
+    <input id="inputField" type="text"><button id="addToDo">+</button> <button id="reminder">Reminder</button>
+    <div class="to-dos" id="toDoContainer">
+    <div class="to-dos" id="toDoContainer-2"></div>
+  </div>
+  <script src=todo-scripts.js></script>
+  <footer class="footer">All rights reserved by Taha</footer>
+
+  <div class="link">
+  <a href="https://github.com/taharasoul" target="_blank">Visit My Github Profile!</a>
+ </div>
+</body>
+
+
 </html>
